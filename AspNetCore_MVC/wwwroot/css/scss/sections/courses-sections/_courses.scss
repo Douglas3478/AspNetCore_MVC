@@ -1,0 +1,59 @@
+.dropbtn {
+    &:hover,
+    &:focus {
+      background-color: #2980B9;
+    }
+}
+
+.courses {
+    padding-top: 50px;  
+    .container {
+        
+        .course-view {
+            .no-bullets {
+                list-style-type: none;
+                display: flex;
+                padding-left: 0;
+                gap: 15px;
+                li{
+                    .no-decor {
+                        text-decoration: none;
+                        color: grey;
+                    }
+                    .chevrons {
+                        padding-left: 15px;
+                    }
+                }
+            }
+        }
+        .courses-show {
+            .dropdown-search {
+                .dropdown {
+                    position: relative;
+                    display: inline-block;
+                  
+                    &-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #f1f1f1;
+                        min-width: 160px;
+                        overflow: auto;
+                        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                        z-index: 1;
+                  
+                        a {
+                            color: black;
+                            padding: 12px 16px;
+                            text-decoration: none;
+                            display: block;
+                        }
+                    }
+                }
+                             
+                .category-search {
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.manage-work {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        .manage-img {
+
+        }
+        .manage-text {
+            
+            h2 {
+                padding-bottom: 40px;
+            }
+            p {
+                
+                i {
+                    color: #8B5CF6
+                }
+            }
+            .btn-theme {
+                margin-top: 45px;
+                width: 160px; 
+                height: 45px; 
+                
+            }
+            
+        }
+    }
+}

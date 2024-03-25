@@ -1,0 +1,36 @@
+.task-management {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 55px;
+    .container {
+        display: flex;
+        
+
+        .tasktext {
+            padding-top: 160px;
+            margin-bottom: 55px;
+            h1{
+                color: #0B0F19;
+                
+                padding-bottom: 50px;
+            }
+            p {
+                padding-bottom: 40px;
+            }
+            button {
+                font-size: 16px;
+                padding: 16px;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            h6 {
+                padding-top: 70px;
+                padding-bottom: 30px;
+            }
+        }
+
+        .taskimg {
+            margin-left: 20px; 
+        }
+    }
+}

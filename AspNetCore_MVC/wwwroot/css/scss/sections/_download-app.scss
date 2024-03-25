@@ -1,0 +1,45 @@
+.download-app {
+    background-color: rgb(242, 242, 255);
+    padding-top: 55px;
+    padding-bottom: 55px;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 180px;
+        .donwload-iphone {
+            
+        }
+        .app-guide {
+            padding-right: 170px;
+            .apptext-title {
+                
+            }
+            .app-download-reviews {
+                
+                .apptext-downloads {
+                    margin-top: 50px;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    gap: 50px;
+                    article {
+                        
+                    }
+                    .fa-star.checked {
+                        color: orange;
+                    }
+                }
+                // .app-download {
+                //     display: flex;
+                //     flex-direction: column;
+                //     justify-content: center;
+                //     align-items: start;
+                //     gap: 10px;
+                    
+                    
+                // }
+            }
+        }
+    }
+}
