@@ -10,8 +10,9 @@ public class AccountDetailsViewModel
 
 public class AccountBasicInfo 
 {
-    [Required]
+    [Required(ErrorMessage = "Enter a first name")]
     [Display(Name = "First name", Prompt = "Enter your first name")]
+    [MinLength(2, ErrorMessage = "Enter a first name")]
     public string FirstName { get; set; } = null!;
 
     [Required]

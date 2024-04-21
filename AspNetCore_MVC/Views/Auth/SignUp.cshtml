@@ -20,28 +20,33 @@
             <div class="form-content">
                 <div id="form-firstname" class="input-group">
                     <label asp-for="FirstName"></label>
-                    <input asp-for="FirstName" />
                     <span asp-validation-for="FirstName"></span>
+                    <input asp-for="FirstName" />
+
                 </div>
                 <div id="form-lastname" class="input-group">
                     <label asp-for="LastName"></label>
-                    <input asp-for="LastName" />
                     <span asp-validation-for="LastName"></span>
+                    <input asp-for="LastName" />
+                    
                 </div>
                 <div id="form-email" class="input-group">
                     <label asp-for="Email"></label>
-                    <input asp-for="Email" />
                     <span asp-validation-for="Email"></span>
+                    <input asp-for="Email" />
+                    
                 </div>
                 <div id="form-password" class="input-group">
                     <label asp-for="Password"></label>
-                    <input asp-for="Password" />
                     <span asp-validation-for="Password"></span>
+                    <input asp-for="Password" />
+                    
                 </div>
                 <div id="form-confirmpassword" class="input-group">
                     <label asp-for="ConfirmPassword"></label>
-                    <input asp-for="ConfirmPassword" />
                     <span asp-validation-for="ConfirmPassword"></span>
+                    <input asp-for="ConfirmPassword" />
+                    
                 </div>
                 <div id="form-checkbox" class="checkbox-group">
                     <div class="input-group">
@@ -58,3 +63,5 @@
 
     </div>
 </section>
+
+@await Html.PartialAsync("_ValidationScriptPartial")
