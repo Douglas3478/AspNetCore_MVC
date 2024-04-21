@@ -1,32 +1,79 @@
-.our-tool {
-    background-color: rgb(242, 242, 255);
+#features {
+    background-color: $gray-100;
+
     .container {
+        text-align: center;
+        padding: 4rem 0;
+
         .our-tool-title {
-            text-align: center;
-            padding-top: 100px;
-            padding-bottom: 40px;
+            margin-bottom: 3rem;
+
+            h2 {
+            }
+
+            p {
+                color: $gray-600;
+            }
         }
+
         .tool-options {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            align-items: center;
-            text-align: center;
-            gap: 60px;
-            padding-bottom: 150px;
-
+            grid-template-columns: 1fr 1fr 1fr;
 
             .article-content {
-                padding: 10px; 
-                border: none; 
-                padding: 0;
-                word-wrap: break-word;
-                img {
-                    padding-top: 40px;
+                padding: 3rem 2rem;
+                transition: 0.2s;
+
+                .article-icon {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 10px;
+
+                    img {
+                        background-color: $gray-100;
+                        padding: 10px;
+                        border-radius: 4px;
+                    }
                 }
+
                 h5 {
-                    padding-top: 50px;
                 }
+
+                p {
+                    color: $gray-700;
+                }
+
+                &:hover {
+                    background-color: white;
+                    box-shadow: 0 0 14px -4px rgba(0,0,0,0.4)
+                }
+            }
+
+            #feature-1 {
+                border-bottom: 1px solid $gray-300;
+            }
+
+            #feature-2 {
+                border-left: 1px solid $gray-300;
+                border-right: 1px solid $gray-300;
+                border-bottom: 1px solid $gray-300;
+            }
+
+            #feature-3 {
+                border-bottom: 1px solid $gray-400;
+            }
+
+            #feature-4 {
+            }
+
+            #feature-5 {
+                border-left: 1px solid $gray-400;
+                border-right: 1px solid $gray-400;
+            }
+
+            #feature-6 {
             }
         }
     }
 }
+@import '../core/_colors.scss';

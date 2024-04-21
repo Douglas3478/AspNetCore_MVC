@@ -7,6 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ViewModels\Components\**" />
+    <Compile Remove="ViewModels\Sections\**" />
+    <Compile Remove="ViewModels\Views\**" />
+    <Compile Remove="wwwroot\s\**" />
+    <Content Remove="ViewModels\Components\**" />
+    <Content Remove="ViewModels\Sections\**" />
+    <Content Remove="ViewModels\Views\**" />
+    <Content Remove="wwwroot\s\**" />
+    <EmbeddedResource Remove="ViewModels\Components\**" />
+    <EmbeddedResource Remove="ViewModels\Sections\**" />
+    <EmbeddedResource Remove="ViewModels\Views\**" />
+    <EmbeddedResource Remove="wwwroot\s\**" />
+    <None Remove="ViewModels\Components\**" />
+    <None Remove="ViewModels\Sections\**" />
+    <None Remove="ViewModels\Views\**" />
+    <None Remove="wwwroot\s\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="compilerconfig.json" />
   </ItemGroup>
 
@@ -19,10 +38,27 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\Components\" />
-    <Folder Include="Models\Sections\" />
-    <Folder Include="Models\Views\" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\courses\" />
+    <Folder Include="wwwroot\images\uploads\profiles\" />
   </ItemGroup>
 
 </Project>
